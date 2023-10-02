@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JS practice</title>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="objectsandarrays.html">Objects and Arrays</a></li>
+            <li><a href="function.html">Function</a></li>
+            <li><a href="promises.html">Promises</a></li>
+            <li><a href="asyncawait.html">Async and Await</a></li>
+            <li><a href="es6function.html">Es6 Function</a></li>
+            <li><a href="html_dom.html">HTML DOM</a></li>
+            <li><a href="html_dom_assignment.html">DOM Assignment</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="banner">
+            <h1>Calculator</h1>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td>Enter first number: </td>
+                    <td><input type="number" name="" id="first_number"></td>
+                </tr>
+                <tr>
+                    <td>Enter second number: </td>
+                    <td><input type="number" name="" id="second_number"></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                    <button onclick="add()">Add</button>
+                    <button onclick="subtract()">Subtract</button>
+                    <button onclick="multiplication()">multiplication</button>
+                    <button onclick="division()">Division</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="js/calc.js"></script>
+</body>
+</html>

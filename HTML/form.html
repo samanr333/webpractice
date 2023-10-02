@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>form</title>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="dialog.html">Dialog</a></li>
+            <li><a href="dands.html">Details and Summary</a></li>
+            <li><a href="flexbox.html">FLexbox</a></li>
+            <li><a href="cssGrid.html">CSS Grid</a></li>
+        </ul>
+    </nav>
+
+    <form action="" method="get">
+        <table>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="name" id="name" placeholder="username"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" id="email" placeholder="abc@xyz.com"></td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td><input type="tel" name="phone" id="phone"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit" id="submit"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        document.getElementById('name').focus();
+      </script>
+</body>
+</html>

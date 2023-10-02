@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <style>
+    /* Media query added */
+    .dialogbox{
+      font-size: 50px;
+      text-align: center;
+      background-color: blueviolet;
+      color: bisque;
+      display: none;
+    }
+    @media(max-width:300px){
+      #box1{
+        display: block;
+      }
+    }
+    @media(max-width:500px) and (min-width: 300px){
+    #box2{
+      display: block;
+      color: yellow;
+    }
+  }
+
+    @media(max-width:800px) and (min-width: 500px){
+    #box3{
+      display: block;
+      color: red;
+    }
+  }
+
+    @media(min-width: 800px){
+    #box4{
+      display: block;
+      color: palevioletred;
+    }
+  }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="form.html">Form</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="dialog.html">Dialog</a></li>
+      <li><a href="dands.html">Details and Summary</a></li>
+      <li><a href="flexbox.html">FLexbox</a></li>
+      <li><a href="cssGrid.html">CSS Grid</a></li>
+    </ul>
+</nav>
+  <button onclick="openDialog()">Open Dialog</button>
+
+  <dialog id="myDialog">
+    <h2>Dialog Title</h2>
+    <p>I am inevitable</p>
+    <button onclick="closeDialog()">Close</button>
+  </dialog>
+
+  <script>
+    function openDialog() {
+      var dialog = document.getElementById('myDialog');
+      dialog.showModal();
+    }
+
+    function closeDialog() {
+      var dialog = document.getElementById('myDialog');
+      dialog.close();
+    }
+  </script>
+  <br><br><br><br>
+  <div class="dialogbox" id="box1">I am box 1.</div>
+  <div class="dialogbox" id="box2">I am box 2.</div>
+  <div class="dialogbox" id="box3">I am box 3.</div>
+  <div class="dialogbox" id="box4">I am box 4.</div>
+</body>
+</html>

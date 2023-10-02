@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JS practice</title>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="objectsandarrays.html">Objects and Arrays</a></li>
+            <li><a href="function.html">Function</a></li>
+            <li><a href="promises.html">Promises</a></li>
+            <li><a href="asyncawait.html">Async and Await</a></li>
+            <li><a href="es6function.html">Es6 Function</a></li>
+            <li><a href="html_dom.html">HTML DOM</a></li>
+            <li><a href="html_dom_assignment.html">DOM Assignment</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="banner" id="banner">
+            <div><img src="img/capA.png" alt="logo" class="logo"></div>
+            <div id="myButton"></div>
+            <h1>HTML DOM:</h1>
+            <button onclick="animateBox()" id="animateButton">Animate the box</button>
+        </div>
+        
+        <!-- Here the content of div is changed by using DOM document property -->
+        <div class="myElement" id="myElement1">Form:</div>
+        <div id="boxDOM" style="text-align: center;"><h1>Hello</h1></div>
+
+        <form id="myForm">
+            <table>
+                <tr>
+                    <td>Name: </td>
+                    <td><input type="text" name="name" id="name" placeholder="name"></td>
+                </tr>
+                <tr>
+                    <td>Date of birth: </td>
+                    <td><input type="date" name="dob" id="dob"></td>
+                </tr>
+                <tr>
+                    <td>Username: </td>
+                    <td><input type="text" name="username" id="username" placeholder="username"></td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td><input type="email" name="email" id="email" placeholder="email"></td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" name="password" id="password" placeholder="password"></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password: </td>
+                    <td><input type="password" name="cPassword" id="cPassword" placeholder="Confirm password"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" id="submit"></td>
+                    <td><input type="reset" id="reset"></td>
+                </tr>
+            </table>
+        </form>
+    </main>
+</body>
+<script src="js/html_dom.js"></script>
+</html>

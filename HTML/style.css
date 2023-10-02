@@ -1,0 +1,179 @@
+body{
+    background-color: rgb(229, 206, 176);
+    margin: 10px;
+}
+.firstcontainer{
+    /* Making the div container a flex-box */
+    display: flex;
+
+    /* setting border of the flex-box */
+    border: 2px solid rebeccapurple;
+
+    /* Giving direction of the flex */
+    /* By default a flex-box is horizontal */
+    /* flex-direction: column makes the boxes verticle but column-recerse makes it arranged in reverse */
+    flex-direction: row;
+    /* align the item in center */
+    /* align-items: center; */
+    flex-wrap: wrap;
+    height: 400px;
+}
+
+.firstitem{
+    background-color: gray;
+    border: 2px solid black;
+    margin: 12px;
+    width: 100px;
+    height: 100px;
+
+}
+
+.secondcontainer{
+    display: flex;
+    border: 2px solid green;
+    flex-direction: row-reverse;
+    justify-content: center;
+    /* flex-wrap wraps when the screen size is changed */
+    flex-wrap: wrap;
+    
+}
+.seconditem{
+    background-color: cadetblue;
+    border: 2px solid black;
+    margin: 12px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* WOrking with individual items in firstcontainer */
+.item3{
+    /* order: 3; */
+    flex-grow: 2;
+    align-self: center;
+
+}
+
+
+
+/* CSS grid */
+.gridcontainer{
+    /* defining the grid container as grid */
+    display: grid;
+    background-color: darkgrey;
+    height: 700px;
+    width: 900px;
+    /* setting up columns and rows in the grid */
+    /* grid-template-columns:125px 125px 125px ;
+    grid-template-rows:125px 125px 125px ; */
+
+    /* Utilize full grid and make 3 rows and 3 columns */
+    /* repeat(3, 1fr) can be written as 1fr 1fr 1fr */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 1fr 100px;
+
+    /* setting gap between rows and columns */
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.griditem{
+    background-color: brown;
+    /* height: 120px;
+    width: 120px; */
+}
+
+/* for header */
+.gheader{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(198, 178, 157);
+}
+
+/* for footer */
+.gfooter{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    font-size: large;
+    background-color: rgb(198, 178, 157);
+}
+
+/* Index page text div */
+.htext{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid rgb(21, 21, 132);
+    background-color: rgb(235, 174, 184);
+    
+}
+.htext h2{
+    color: blue;
+}
+
+
+/* for navbar of the site */
+#navbar{
+    border: 3px solid rebeccapurple;
+    background-color: grey;
+    height: 40px;
+    overflow: hidden;
+}
+#navbar ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+#navbar a:hover{
+    background-color: green;
+}
+
+#navbar a:active{
+    background-color: #04AA6D;
+  color: green;
+}
+
+
+
+
+/* Gallery */
+.gallery{
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    border-width: 100%;
+    align-items: center;
+    padding: auto;
+}
+
+.gallery img{
+	width: 300px;
+	padding: 5px;
+    /* Adding filter to the gallery */
+	filter: grayscale(100%);
+	transition: 1s;
+	height: 200;
+}
+
+.gallery img:hover{
+    filter: none;
+}
